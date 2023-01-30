@@ -1,0 +1,25 @@
+-- create table school(name varchar(30),roll_no int,div varchar(10));
+
+-- select distinct name,div from school order by div;
+-- insert into school(name,roll_no,div) values('sagar',07,'A');
+-- insert into school(name,roll_no,div) values('rohan',27,'D'),('nai',47,'B'),('sajid',37,'C');
+-- select name,roll_no+2 from school;
+-- select * from school where div='A';
+select * from school;
+-- select * from school where roll_no=37;
+
+
+- create table emp_info(emp_name varchar(50),emp_salaray int,joining_date date,location varchar(50),Age int);
+-- select * from emp_info;
+-- insert into emp_info(emp_name,emp_salaray,joining_date,location,age) values('sagar',20000,'2014-02-25','Mumbai',25);
+-- insert into emp_info(emp_name,emp_salaray,joining_date,location,age) 
+-- values('rohan',30000,'2017-09-15','Kurla',35),
+-- ('sajid',40000,'2010-03-25','chembur',45);
+--  insert into emp_info(emp_name,emp_salaray,joining_date,location,age) 
+-- values('ajmer',50000,'2020-09-15','shimla',45),
+-- ('abhi',60000,'2010-07-12','manali',55);
+-- select * from emp_info;
+-- select * from emp_info where emp_id=4;
+-- select * from emp_info where emp_id!=3;
+-- select * from emp_info where emp_salaray<=50000 and emp_salaray>=30000;
+-- delete from emp_info where emp_name='sajid';
