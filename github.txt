@@ -23,3 +23,24 @@ select * from school;
 -- select * from emp_info where emp_id!=3;
 -- select * from emp_info where emp_salaray<=50000 and emp_salaray>=30000;
 -- delete from emp_info where emp_name='sajid';
+
+Tables with joins
+
+-- create table school_info(roll_no int unique not null primary key,name varchar(50),city varchar(30));
+-- select * from school_info
+-- insert into school_info(roll_no,name,city) values(2,'Rohan','Delhi'),
+-- (3,'Sajid','Agra'),(4,'Abhi','Kolkata'),(5,'Shoaib','Ranchi');
+
+
+-- create table marks(roll_no int ,marks int,serial_no int primary key,foreign key (roll_no) references school_info(roll_no));
+-- select * from marks
+-- insert into marks(roll_no,marks,serial_no) values(1,78,1),(2,82,2),(3,85,3);
+
+-- SELECT school_info.roll_no,school_info.name,school_info.city,marks.marks,marks.serial_no
+-- FROM school_info inner JOIN marks ON school_info.roll_no = marks.roll_no;
+
+-- SELECT school_info.roll_no,school_info.name,school_info.city,marks.marks,marks.serial_no
+-- FROM school_info left JOIN marks ON school_info.roll_no = marks.roll_no;
+
+-- SELECT school_info.roll_no,school_info.name,school_info.city,marks.marks,marks.serial_no
+-- FROM school_info right JOIN marks ON school_info.roll_no = marks.roll_no;
